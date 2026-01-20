@@ -26,6 +26,7 @@ I made Lity as a clean, end-to-end example of a modern Next.js app that isn’t 
 - **NextAuth** (Credentials provider)
 - **Prisma** + **SQLite**
 
+
 ## Getting Started
 
 Install dependencies and run the dev server:
@@ -46,6 +47,7 @@ After running the demo seed script (`scripts/seed-demo-user.mjs`), you can sign 
 - **Password**: `DemoPass123!`
 
 > Note: This is **for local development only**. Don’t use these credentials in production.
+> Home uses server rendering (App Router) and Prisma to query published posts. Filters update the URL (`?search=&tag=`) and trigger a new server render. Auth is handled by NextAuth (Credentials), with route protection via middleware for `/editor`.
 
 To regenerate/change the demo user, run:
 
