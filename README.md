@@ -48,12 +48,6 @@ After running the demo seed script (`scripts/seed-demo-user.mjs`), you can sign 
 > Note: This is **for local development only**. Don’t use these credentials in production.
 > Home uses server rendering (App Router) and Prisma to query published posts. Filters update the URL (`?search=&tag=`) and trigger a new server render. Auth is handled by NextAuth (Credentials), with route protection via middleware for `/editor`.
 
-To regenerate/change the demo user, run:
-
-```bash
-cd /Users/zeynep/Downloads/files/lity
-node scripts/seed-demo-user.mjs
-```
 
 ### Notes
 - Posts use **Markdown**.
