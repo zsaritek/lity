@@ -4,6 +4,13 @@ Lity is a small blog platform project. The goal is simple: log in, write posts i
 
 ![Lity screenshot](/public/lity-project.png)
 
+### Purpose
+I made Lity as a clean, end-to-end example of a modern Next.js app that isn’t a toy “hello world”, but also isn’t over-engineered.
+
+- **For learning**: see how auth, database access, server/client components, and a UI library fit together.
+- **For reference**: copy patterns for API routes, form handling, and basic CRUD flows.
+- **For iteration**: it’s intentionally small so you can keep adding features (pagination, editor preview, richer profiles, etc.) without fighting the setup.
+
 ### What you can do
 - **Auth**: sign up / sign in (credentials)
 - **Posts**: create, edit, delete, publish/draft
