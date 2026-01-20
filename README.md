@@ -32,7 +32,6 @@ I made Lity as a clean, end-to-end example of a modern Next.js app that isn’t 
 Install dependencies and run the dev server:
 
 ```bash
-cd /Users/zeynep/Downloads/files/lity
 npm install
 npm run dev
 ```
