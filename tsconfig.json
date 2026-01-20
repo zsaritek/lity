@@ -13,13 +13,16 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "next-auth": ["./node_modules/next-auth"],
+      "next-auth/*": ["./node_modules/next-auth/*"]
     }
   },
   "include": [

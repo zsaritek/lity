@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Lity
+
+Lity is a small blog platform project. The goal is simple: log in, write posts in Markdown, publish them, and let people read and comment. I built it as a practical “full stack” reference app using the tools I like working with.
+
+![Lity screenshot](/public/lity-project.png)
+
+### What you can do
+- **Auth**: sign up / sign in (credentials)
+- **Posts**: create, edit, delete, publish/draft
+- **Tags**: add tags (shown as hashtags) + filter on the home feed
+- **Search**: search posts by title
+- **Profiles**: view and edit your own profile (bio/avatar/social link)
+- **Comments**: add and delete your own comments
+- **Theme**: light/dark mode toggle
+
+### Tech stack
+- **Next.js** (App Router) + **React** + **TypeScript**
+- **Material UI (MUI)** + Emotion styling
+- **NextAuth** (Credentials provider)
+- **Prisma** + **SQLite**
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the dev server:
 
 ```bash
+cd /Users/zeynep/Downloads/files/lity
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo login (local dev)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+After running the demo seed script (`scripts/seed-demo-user.mjs`), you can sign in at `http://localhost:3000/signin` with:
 
-## Learn More
+- **Email**: `demo@lity.local`
+- **Password**: `DemoPass123!`
 
-To learn more about Next.js, take a look at the following resources:
+> Note: This is **for local development only**. Don’t use these credentials in production.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To regenerate/change the demo user, run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+cd /Users/zeynep/Downloads/files/lity
+node scripts/seed-demo-user.mjs
+```
 
-## Deploy on Vercel
+### Notes
+- Posts use **Markdown**.
+- Tags are stored without the `#` but displayed as `#tag`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
