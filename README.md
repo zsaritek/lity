@@ -59,3 +59,5 @@ node scripts/seed-demo-user.mjs
 - Tags are stored without the `#` but displayed as `#tag`.
 
 
+Co-authored-by: Mehmet Koray Sariteke <koraysariteke@gmail.com>
+Co-authored-by: Zeynep Sariteke <zsaritek@gmail.com>
